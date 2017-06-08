@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="skns.com.mobile.Activity.MainActivity">
+
+    <include
+        android:id="@+id/rl_header"
+        layout="@layout/view_common_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+
+    <include
+        android:id="@+id/rl_menu_mini"
+        layout="@layout/view_common_menu_mini"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true" />
+
+
+    <skns.com.mobile.View.MenuView
+        android:visibility="gone"
+        android:id="@+id/rl_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </skns.com.mobile.View.MenuView>
+
+    <skns.com.mobile.View.LoadingView
+        android:id="@+id/lv_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </skns.com.mobile.View.LoadingView>
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Mobile</string>
+    <!--Common-->
+    <string name="common_text_1">확인</string>
+    <string name="common_text_2">취소</string>
+
+
+    <!--LOGIN-->
+    <string name="login_input_1">사원코드를 입력하세요.</string>
+    <string name="login_input_2">비밀번호를 입력하세요.</string>
+    <string name="login_input_3">휴대전화 번로를 입력하세요.</string>
+    <string name="login_text_1">저장하기</string>
+    <string name="login_text_2">종료하시겠습니까?</string>
+    <string name="login_text_3">시리얼 번호를 확인할수없습니다.</string>
+
+</resources>
