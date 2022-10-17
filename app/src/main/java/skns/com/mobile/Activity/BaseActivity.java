@@ -31,7 +31,7 @@ import skns.com.mobile.View.MenuView;
  */
 
 public class BaseActivity extends AppCompatActivity {
-
+    
     GPSManager gpsManager;
     Handler gpsHandler;
 
