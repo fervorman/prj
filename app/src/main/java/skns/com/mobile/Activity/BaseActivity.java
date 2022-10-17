@@ -31,7 +31,7 @@ import skns.com.mobile.View.MenuView;
  */
 
 public class BaseActivity extends AppCompatActivity {
-    
+    //주석을 달아봅시다.
     GPSManager gpsManager;
     Handler gpsHandler;
 
