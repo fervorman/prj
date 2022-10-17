@@ -23,9 +23,11 @@ import skns.com.mobile.Common.UserInfo;
 import skns.com.mobile.R;
 import skns.com.mobile.View.MenuView;
 
+
+
 /**
  * Created by jungbaepark on 2017. 6. 2..
- * 모든 Activity는 BaseActivity를 상속받는다
+ * 紐⑤뱺 Activity�뒗 BaseActivity瑜� �긽�냽諛쏅뒗�떎
  */
 
 public class BaseActivity extends AppCompatActivity {
@@ -38,8 +40,8 @@ public class BaseActivity extends AppCompatActivity {
     public LoadingView loadingView;
     public SKApplication skApplication;
     public UserInfo userInfo;
-    public ImageButton btnHome, btnMenu, btnBack;           // 공통 메뉴 버튼들
-    public MenuView rlMenu;                                 // 메뉴 뷰
+    public ImageButton btnHome, btnMenu, btnBack;           // 怨듯넻 硫붾돱 踰꾪듉�뱾
+    public MenuView rlMenu;                                 // 硫붾돱 酉�
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,17 +51,17 @@ public class BaseActivity extends AppCompatActivity {
     }
 
 
-    // 로딩뷰 show
+    // 濡쒕뵫酉� show
     public void showLoading() {
         if (loadingView != null) loadingView.showLoading();
     }
 
-    // 로딩뷰 gone
+    // 濡쒕뵫酉� gone
     public void goneLoading() {
         if (loadingView != null) loadingView.goneLoading();
     }
 
-    // api , 네트워크 오류시
+    // api , �꽕�듃�썙�겕 �삤瑜섏떆
     public void showErrorAPI(String s) {
         AlertDialog.Builder alert = new AlertDialog.Builder(BaseActivity.this);
         alert.setPositiveButton(getText(R.string.common_text_1), new DialogInterface.OnClickListener() {
@@ -95,7 +97,7 @@ public class BaseActivity extends AppCompatActivity {
         }
     }
 
-    // GPSManager 생성
+    // GPSManager �깮�꽦
     public void initGPSManager() {
         if (gpsManager == null) {
             gpsManager = new GPSManager(BaseActivity.this, gpsHandler);
@@ -105,7 +107,7 @@ public class BaseActivity extends AppCompatActivity {
     }
 
 
-    // GPS 권한 요청
+    // GPS 沅뚰븳 �슂泥�
     public void regGPSPermisson(Activity activity) {
         if (Build.VERSION.SDK_INT >= 23 && ContextCompat.checkSelfPermission(activity, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(activity, new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, 0);
